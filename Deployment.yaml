@@ -18,5 +18,7 @@ spec:
       containers:
         - name: golang
           image: golang
+          command: ["/bin/echo"]
+          args: ["-c", "while true; do echo hello; sleep 10;done"]
           ports:
             - containerPort: 8080
