@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: golang
-          image: golang
+          image: cerberus2k/tekton:latest
           command: ["/bin/echo"]
           args: ["-c", "while true; do echo hello; sleep 10;done"]
           ports:
